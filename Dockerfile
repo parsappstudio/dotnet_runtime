@@ -1,4 +1,4 @@
-From microsoft/dotnet:runtime
+From microsoft/dotnet:aspnetcore-runtime
 
 Run apt-get update
 
