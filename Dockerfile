@@ -25,4 +25,4 @@ RUN groupadd -r app &&\
 
 RUN chown -R app:app $HOME
 
-CMD ["service nginx start"]
+CMD ["service", "nginx", "start"]
