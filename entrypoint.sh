@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "--- starting nginx ---"
-nignx -g "daemon off;"
+service nginx start
+tail -f /dev/null
