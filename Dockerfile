@@ -16,3 +16,12 @@ Run apt-get update
 
 #install unzip
 Run apt-get install -y unzip
+
+ENV HOME=/home/app
+RUN mkdir -p $HOME
+
+RUN groupadd -r app &&\
+    useradd -r -g app -d $HOME -s /sbin/nologin -c "Docker image user" app
+
+RUN chown -R app:app $HOME
+
