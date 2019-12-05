@@ -1,5 +1,5 @@
 #From microsoft/dotnet:aspnetcore-runtime
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0 AS runtime
+FROM mcr.microsoft.com/dotnet/core/aspnet:latest AS runtime
 
 Run apt-get update
 
