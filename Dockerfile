@@ -1,4 +1,5 @@
-From microsoft/dotnet:aspnetcore-runtime
+#From microsoft/dotnet:aspnetcore-runtime
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.0 AS runtime
 
 Run apt-get update
 
@@ -22,7 +23,7 @@ RUN sed -i -e 's/\r$//' /bin/entrypoint.sh
 
 
 #install unzip
-Run apt-get install -y unzip
+Run apt-get install -y unzip nano
 
 ENV HOME=/home/app
 RUN mkdir -p $HOME
